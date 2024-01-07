@@ -123,11 +123,13 @@ header {
   font-weight: 500;
   font-size: 1rem;
   padding: 2px;
+  letter-spacing: 1px;
 }
 #taskdesc {
   font-weight: 300;
   font-size: .9rem;
   padding: 2px;
+  letter-spacing: 2px;
 }
 @media only screen and (max-width: 600px) {
 #todocard{
