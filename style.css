@@ -120,14 +120,15 @@ header {
   font-size: 0.9rem;
 }
 #tasktitle {
-  font-weight: 400;
-  font-size: 1.05rem;
-  padding: 2px;
-  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 2px 0;
+
 }
 #taskdesc {
   font-weight: 300;
-  font-size: .85rem;
+  font-size: .88rem;
+  line-height: 18px;
   padding: 2px;
   width: 90%;
   letter-spacing: 1px;
