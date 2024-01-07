@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+#todocontainer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(rgba(1, 38, 87, 0.637), rgba(0, 0, 0, 0.8)),
+    url("./assets/todos.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#todocard {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  gap: 20px;
+}
+
+#todocard header h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#apptitle{
+  font-size: 2rem;
+}
+#todotask,
+#description {
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: .9rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+::placeholder {
+  color: rgb(0, 180, 216,.7);
+}
+#submit {
+  width: 25%;
+  padding: 8px 0;
+  background-color: #00b4d8;
+  color: #111;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+.empty{
+  text-align: center;
+}
+.wraptask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 16px;
+}
+#actions {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 6px;
+}
+.btn,.edit,.complete{
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todo-content {
+  box-shadow:  2px 3px 3px rgba(240, 46, 170, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.9), 0 6px 20px 0 rgba(240, 46, 170, 0.2);
+  background: linear-gradient(
+    158deg,
+    rgb(16, 68, 99) 0%,
+    rgba(6, 29, 71, 1) 63%,
+    rgba(4, 23, 57, 1) 100%
+  );
+  color: #fff;
+  width: 600px;
+  padding: 30px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.todo-content:empty{
+  display: none;
+}
+.todo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.taskitems {
+  width: 70%;
+}
+#date,
+#time {
+  font-size: 0.9rem;
+}
+#tasktitle {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 2px;
+}
+#taskdesc {
+  font-weight: 300;
+  font-size: .9rem;
+  padding: 2px;
+}
+@media only screen and (max-width: 600px) {
+#todocard{
+width: 450px;
+}
+  .todo-content{
+  width: 450px;
+  padding: 15px 5px;
+  gap: 15px;
+}
+.wraptask {
+  padding: 16px 5px;
+  gap: 10px;
+}
+.taskitems {
+  width: 65%;
+}
+}
